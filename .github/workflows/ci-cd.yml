@@ -128,8 +128,8 @@ jobs:
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
-          vuln-type: 'os'
-          severity: 'CRITICAL,HIGH'
+          vuln-type: 'os,library'
+          severity: 'CRITICAL'
       
       - name: Push Docker image
         uses: docker/build-push-action@v5
